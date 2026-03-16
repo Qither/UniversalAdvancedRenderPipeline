@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.baddog.rendering.subsurfacescattering": {
+      "version": "file:com.baddog.rendering.subsurfacescattering",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "14.0.8",
+        "com.unity.render-pipelines.core": "14.0.8"
+      }
+    },
     "com.unity.addressables": {
       "version": "2.8.1",
       "depth": 1,

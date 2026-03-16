@@ -1,0 +1,23 @@
+{
+    "name": "UARP.Rendering.SubsurfaceScattering.Editor",
+    "rootNamespace": "UARP.Rendering.SubsurfaceScattering.Editor",
+    "references": [
+        "UARP.Rendering.SubsurfaceScattering",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Core.Editor",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Universal.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
+

@@ -26,8 +26,9 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 7200000, guid: b9a23f869c4fd45f19c5ada54dd82176, type: 3}
   m_RendererFeatures:
   - {fileID: 7833122117494664109}
-  - {fileID: 4613096039229501001}
-  m_RendererFeatureMap: ad6b866f10d7b46c1d8892cb1470c9ae
+  - {fileID: 2548974977842688976}
+  - {fileID: 8737265872961778425}
+  m_RendererFeatureMap: ad6b866f10d7b46cd033acbf3cc75f23f9b207fa04014179
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -56,6 +57,34 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
+--- !u!114 &2548974977842688976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960baf0808705ad428809cbd7e296210, type: 3}
+  m_Name: SubsurfaceScattering
+  m_EditorClassIdentifier: UARP.Rendering.SubsurfaceScattering::UARP.Rendering.SubsurfaceScattering.SubsurfaceScattering
+  m_Active: 1
+  settings:
+    diffusionProfiles:
+    - {fileID: 11400000, guid: e590f840d084ce0459816fcd6b778a27, type: 2}
+    - {fileID: 11400000, guid: 8fadaed1d4d3a4c40ad75a405840bbae, type: 2}
+    renderPassEvent: 300
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    sampleBudget: 20
+    downsampleSteps: 0
+    subsurfaceScatteringAttenuation: 0
+    subsurfaceScatteringCS: {fileID: 7200000, guid: 2c515e7a905fd6240845e6a793d69dd0, type: 3}
+    subsurfaceScatteringDownsampleCS: {fileID: 7200000, guid: 7f1b1ba1697f75c4d873bdbeea2a39b7, type: 3}
+    resolveStencilCS: {fileID: 7200000, guid: cef3390490198cb438743a58c754c252, type: 3}
+    combineLightingShader: {fileID: 4800000, guid: 0cc1b39907c6d474ab737b71c92334e4, type: 3}
 --- !u!114 &4613096039229501001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,3 +126,33 @@ MonoBehaviour:
     BlurQuality: 0
     Falloff: 100
     SampleCount: -1
+--- !u!114 &8737265872961778425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59053346d846f94a8d5fcb38778c5da, type: 3}
+  m_Name: SubsurfaceScattering
+  m_EditorClassIdentifier: BadDog.Rendering.SubsurfaceScattering::BadDog.Rendering.SubsurfaceScattering.SubsurfaceScattering
+  m_Active: 0
+  settings:
+    diffusionProfiles:
+    - {fileID: 11400000, guid: b203c8fcbc13c324ab529390135dabfe, type: 2}
+    - {fileID: 11400000, guid: 72fbc91f28c02b2469a43e94af3a8f0b, type: 2}
+    - {fileID: 11400000, guid: 91041e1b7ca520849a94db0a90eccede, type: 2}
+    - {fileID: 11400000, guid: b23cfcfae77db964c89dd600d1a1ee59, type: 2}
+    renderPassEvent: 300
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    sampleBudget: 20
+    downsampleSteps: 0
+    subsurfaceScatteringAttenuation: 0
+    subsurfaceScatteringCS: {fileID: 7200000, guid: d7a46123525242f4283ab33ab1c7e656, type: 3}
+    subsurfaceScatteringDownsampleCS: {fileID: 7200000, guid: ac3379c10fe6cb641b6ff6174e7a79bd, type: 3}
+    resolveStencilCS: {fileID: 7200000, guid: d63eed0958e77dc40b6b76b0b8821044, type: 3}
+    combineLightingShader: {fileID: 4800000, guid: f29566c43e220fd40b5022fdd5ddbf6f, type: 3}
